@@ -42,7 +42,7 @@ function addMessage(postTitle,postBody){
 var postData={
 title:postTitle, body:postBody
 }
-var database = firebase.database().ref("posts");
+var database = firebase.database("database-ssj8").ref("posts");
 var newPostRef = database.push();
 newPostRef.set(postData);
 }
